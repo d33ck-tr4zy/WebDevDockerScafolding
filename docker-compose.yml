@@ -1,0 +1,51 @@
+version: '3'
+
+#services
+services:
+  #Nginx
+  webserver:
+    image: nginx:1.17-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./src/app:/var/www/app:ro,delegated
+      - ./.docker/nginx/conf.d:/etc/nginx/conf.d:ro
+      - phpmyadmindata:/var/www/phpmyadmin:ro,delegated
+    depends_on: 
+      - database
+      - appserver
+
+  appserver:
+    build: ./src
+    working_dir: /var/www/app
+    volumes:
+      - ./src/app:/var/www/app:delegated
+    depends_on: 
+      - database
+
+  #mysql
+  database:
+    image: mysql:5
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+    volumes:
+      - ./.docker/db/my.cnf:/etc/mysql/conf.d/my.cnf:ro
+      - dbdata:/var/lib/mysql:delegated
+    
+  #PHPMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5-fpm-alpine
+    environment: 
+      PMA_HOST: database
+      UPLOAD_LIMIT: 300000000
+    volumes: 
+      - phpmyadmindata:/var/www/html:delegated
+    depends_on: 
+      - database
+
+# DynVolumes
+volumes:
+  dbdata:
+
+  phpmyadmindata:
