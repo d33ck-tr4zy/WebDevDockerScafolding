@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232f621d-0e1e-46f1-8f4e-86d4332ce3e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.docker/db/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/conf.d/phpmyadmin.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/conf.d/sgapps.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sgapps.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OBSOLETE_HomeController-orig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1kT4v0pyZZm44CmUcLXDGNeH8JF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,7 +24,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,12 +52,24 @@
       <option name="presentableId" value="Default" />
       <updated>1605711475706</updated>
       <workItem from="1605711477464" duration="5858000" />
-      <workItem from="1605742489404" duration="12680000" />
+      <workItem from="1605742489404" duration="14507000" />
     </task>
+    <task id="LOCAL-00001" summary="INITIAL COMMIT">
+      <created>1605758927915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605758927915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="INITIAL COMMIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="INITIAL COMMIT" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="140" key="#Docker" timestamp="1605747616137">
@@ -103,6 +108,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="74" key="SettingsEditor/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1605758645813" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1605758945940">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1605758945940" />
     <state x="507" y="29" width="619" height="801" key="find.popup" timestamp="1605746099296">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
